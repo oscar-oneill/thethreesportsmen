@@ -1,0 +1,117 @@
+.player__wrap {
+    height: 50vh;
+    width: 100vw;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    padding: 10px;
+}
+
+.player__header {
+    display: flex;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.player__body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container__player {
+    height: 140px;
+    width: 600px;
+    background: #000000c4;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    margin: 0px 10px;
+    align-items: center;
+    border: 2px solid #6a5acd;
+}
+
+.player__image {
+    height: 120px;
+    width: 120px;
+    background: #000000;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.player__image img {
+    height: 120px;
+    width: 120px;
+    border-radius: 5px;
+    object-fit: contain;
+    border: 2px solid #ffffff;
+}
+
+.player__box {
+    position: relative;
+}
+
+.player__data {
+    display: inline-block;
+}
+
+.player__title {
+    height: auto;
+    width: auto;
+    background: transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #ffffff;
+}
+
+.player__guests {
+    height: auto;
+    width: auto;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: thistle;
+}
+
+.player__controls {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+.controls__rewind, .controls__forward {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+}
+
+.controls__play {
+      width: 0;
+      height: 0;
+      border-top: 12.5px solid transparent;
+      border-left: 22px solid #fa8072;
+      border-bottom: 12.5px solid transparent;
+}
+
+/* .player__progress {
+    height: 5px;
+    width: 200px;
+    border-radius: 10px;
+    background: white;
+} */

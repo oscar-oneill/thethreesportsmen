@@ -1,0 +1,91 @@
+.nav__navbar {
+    width: 100vw;
+    height: 90px;
+    background: transparent;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.nav__title {
+    color: #ffffff;
+    display: block;
+}
+
+.title__main {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.title__main span {
+    color: #fa8072;
+}
+
+.title__sub {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* Paypal Donation Box */
+.button__paypal {
+    font-family: "Gotham Black";
+    position: absolute;
+    right: 60px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background: #0079C1;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.button__paypal:hover {
+    background: #00457C;
+    transition: .2s ease-in-out;
+}
+
+.button__paypal a {
+    color: white;
+}
+
+.button__image {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+/* Burger Menu */
+.menu {
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #6a5acd;
+    transition: .2s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 654px) {
+    .button__paypal {
+        display: none;
+    }
+
+    .title__main {
+        font-size: 20px;
+    }
+
+    .title__sub {
+        font-size: 15px;
+    }
+}

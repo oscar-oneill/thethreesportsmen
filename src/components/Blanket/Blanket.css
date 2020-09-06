@@ -1,0 +1,59 @@
+.blanket {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #040706b0 0%, #1e182ba6 100%);
+    position: fixed;
+    top: 0px;
+}
+
+.blanket__option {
+    color: #6a5acd;
+    font-size: 30px;
+    position: absolute;
+    top: 28px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.blanket__option:hover {
+    color: #fa8072;
+    transition: .8s ease-out;
+    cursor: pointer;
+}
+
+.blanket__items {
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+    right: 15px;
+    list-style-type: none;
+    text-align: right;
+    top: 20%;
+}
+
+.blanket__footer {
+    font-family: "Rubik";
+    text-transform: uppercase;
+    display: block;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    font-size: 12px;
+}
+
+ul {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li:hover {
+    color: #fa8072;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
