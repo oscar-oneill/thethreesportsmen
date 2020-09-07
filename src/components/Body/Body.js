@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Body/Body.css';
+import Blanket from "../Blanket/Blanket";
+import Intro from "../Intro/Intro";
 import Player from '../Player/Player';
 import About from '../About/About';
-import Blanket from '../Blanket/Blanket';
-import Intro from '../Intro/Intro';
+import Scores from '../Scores/Scores';
 import Footer from '../Footer/Footer';
 
 function Body() {
@@ -13,6 +14,7 @@ function Body() {
         <Intro />
         <Player />
         <About />
+        <Scores />
         <Footer />
       </div>
     );

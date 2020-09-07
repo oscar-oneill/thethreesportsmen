@@ -1,5 +1,6 @@
 import React from 'react';
 import './Blanket.css';
+import react from '../Blanket/react.png';
 
 function Blanket() {
     function foldBlanket() {
@@ -20,12 +21,12 @@ function Blanket() {
           <li><a href="#home">Home</a></li>
           <li><a href="#episodes">Episodes</a></li>
           <li><a href="#about">About</a></li>
-          <li>Historical Picks</li>
+          <li><a href="#scores">Scores</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
 
         <div className="blanket__footer">
-          &#169; 2020 Three Sports Men - All Rights Reserved.
+          Built with React <img src={react} alt="react"/> by &nbsp;<a href="https://github.com/oscar-oneill">Oscar O'Neill</a>
         </div>
       </div>
     );

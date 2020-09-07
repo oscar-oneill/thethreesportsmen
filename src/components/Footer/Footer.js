@@ -4,7 +4,7 @@ import '../Footer/Footer.css'
 function Footer() {
     return (
       <footer className="footer">
-        Created with<i class="fab fa-react"></i>by Oscar O'Neill
+        <span id="rights">© 2020 THREE SPORTS MEN - ALL RIGHTS RESERVED</span>
       </footer>
     );
 }

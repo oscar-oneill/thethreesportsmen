@@ -1,0 +1,27 @@
+.scores__wrap {
+    height: 50vh;
+    width: 100vw;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    padding: 10px;
+}
+
+.scores__header {
+    display: flex;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.scores__body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
