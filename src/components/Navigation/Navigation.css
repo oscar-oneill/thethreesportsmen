@@ -1,7 +1,7 @@
 .nav__navbar {
     width: 100vw;
     height: 90px;
-    background: transparent;
+    background: #000000;
     padding: 10px;
     display: flex;
     align-items: center;

@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: url("./images/ricky.singh.forestpark.jpeg");
+    background-image: linear-gradient(to right, #0804049a 30%, #1a1624 100%), url('./images/brooklyn_nets_floor.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,10 +39,6 @@ a {
 
 
 @media screen and (max-width: 654px) {
-    body {
-        background-attachment: fixed;
-    }
-
     .button__paypal {
         display: none;
     }

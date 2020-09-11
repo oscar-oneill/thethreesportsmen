@@ -1,6 +1,5 @@
 import React from 'react';
 import './Blanket.css';
-import react from '../Blanket/react.png';
 
 function Blanket() {
     function foldBlanket() {
@@ -24,10 +23,6 @@ function Blanket() {
           <li><a href="#scores">Scores</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
-
-        <div className="blanket__footer">
-          Built with React <img src={react} alt="react"/> by &nbsp;<a href="https://github.com/oscar-oneill">Oscar O'Neill</a>
-        </div>
       </div>
     );
 }
