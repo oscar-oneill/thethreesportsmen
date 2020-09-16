@@ -7,11 +7,12 @@
 .basketball__wrap {
     height: 130px;
     min-width: 365px;
-    background: #ffffffc4;
+    background: #fffbfbd0;
     display: inline-block;
     margin: 15px;
     color: #000000;
     font-family: 'Rubik';
+    font-size: 14.25px;
 }
 
 .basketball__wrap img {
@@ -88,4 +89,10 @@
     justify-content: center;
     margin-left: 5px;
     font-size: 13px;
+}
+
+#nba {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
 }

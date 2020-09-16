@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #0804049a 30%, #1a1624 100%), url('./images/brooklyn_nets_floor.jpg') ;
+    background-image: url('./images/rickysingh_forestpark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -35,8 +35,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-
 
 @media screen and (max-width: 654px) {
     .button__paypal {

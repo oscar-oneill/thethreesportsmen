@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     top: 50%;
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
-

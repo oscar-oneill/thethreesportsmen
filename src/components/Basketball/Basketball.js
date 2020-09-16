@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../Basketball/Basketball.css'
+import Logo from '../Basketball/nba.png'
 
 class Basketball extends Component {
   constructor(props) {
@@ -28,13 +29,14 @@ class Basketball extends Component {
     console.log(this.state.items);
 
     if (!isLoaded) {
-      return <div className="basketball__wrap">Loading data...</div>;
+      return <div className="basketball__wrap">Loading Data....</div>;
     } else {
       return (
         <div class="nba__container">
           {items.map((item, i) => (
             <div className="basketball__wrap" key={item.id}>
               <div className="playoff__series">
+                <img id="nba" src={Logo} alt="nba playoffs logo" />
                 {items[i].competitions[0].notes[0].headline}
               </div>
               <div className="nba__road">

@@ -1,18 +1,17 @@
 import React from 'react';
 import '../Player/Player.css';
 import Artwork from "./TSM-001.jpg";
-// import AudioPlayer from "../AudioPlayer/AudioPlayer";
+// import MediaPlayer from "../MediaPlayer/MediaPlayer";
 
 function Player() {
     return (
       <div className="player__wrap" id="episodes">
-        {/* <AudioPlayer /> */}
-        <div className="player__header">
-          Stream Episode 1 Now
-        </div>
+        {/* <div>
+          <MediaPlayer />
+        </div> */}
+        <div className="player__header">Stream Episode 1 Now</div>
 
         <div className="player__body">
-    
           <div className="container__player">
             <div className="player__image">
               <img src={Artwork} alt="episode-1" />

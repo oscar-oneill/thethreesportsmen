@@ -1,0 +1,4 @@
+.player__audio {
+    display: inline-flex;
+    z-index: 1;
+}

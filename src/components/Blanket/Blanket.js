@@ -21,6 +21,7 @@ function Blanket() {
           <li><a href="#episodes">Episodes</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#scores">Scores</a></li>
+          <li><a href="#headlines">Headlines</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>

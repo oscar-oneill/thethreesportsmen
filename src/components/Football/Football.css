@@ -7,11 +7,12 @@
 .football__wrap {
     height: 130px;
     min-width: 365px;
-    background: #ffffffc4;
+    background: #fffbfbd0;
     display: inline-block;
     margin: 15px;
     color: #000000;
     font-family: 'Rubik';
+    font-size: 14.25px;
 }
 
 .football__wrap img {
@@ -88,4 +89,15 @@
     justify-content: center;
     margin-left: 5px;
     font-size: 13px;
+}
+
+#nfl {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+}
+
+.team__record {
+    font-size: 13px;
+    margin-left: 3px;
 }

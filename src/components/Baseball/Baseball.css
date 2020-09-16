@@ -7,11 +7,12 @@
 .baseball__wrap {
     height: 130px;
     min-width: 365px;
-    background: #ffffffc4;
+    background: #fffbfbd0;
     display: inline-block;
     margin: 15px;
     color: #000000;
     font-family: 'Rubik';
+    font-size: 14.25px;
 }
 
 .baseball__wrap img {
@@ -21,7 +22,7 @@
     margin-right: 5px;
 }
 
-/* .status {
+.status {
     height: 20px;
     width: 100%;
     background: #000000;
@@ -29,7 +30,8 @@
     font-size: 14px;
     display: flex;
     align-items: center;
-} */
+    color: #ffffff;
+}
 
 .mlb__road, .mlb__home {
     width: 100%;
@@ -89,3 +91,14 @@
     margin-left: 5px;
     font-size: 13px;
 } */
+
+#mlb {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.team__record {
+    font-size: 13px;
+    margin-left: 3px;
+}

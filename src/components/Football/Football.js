@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../Football/Football.css';
+import Logo from '../Football/nfl.png';
 
 class Football extends Component {
 
@@ -29,7 +30,7 @@ class Football extends Component {
         console.log(this.state.items)
 
         if (!isLoaded) {
-            return <div className="football__wrap">Loading data...</div>;
+            return <div className="football__wrap">Loading Data...</div>;
         }
         
         else {
@@ -38,6 +39,7 @@ class Football extends Component {
                 {items.map((item, i) => (
                   <div className="football__wrap" key={item.id}>
                     <div className="week">
+                      <img id="nfl" src={Logo} alt="nfl logo" />
                       Week {this.state.week.number}
                     </div>
 
@@ -49,7 +51,7 @@ class Football extends Component {
                         />
                       </div>
                       <div className="road__name">
-                        {items[i].competitions[0].competitors[1].team.displayName}
+                        {items[i].competitions[0].competitors[1].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[1].records[0].summary})</span>
                       </div>
                       <div className="road__score">
                         {items[i].competitions[0].competitors[1].score}
@@ -68,7 +70,7 @@ class Football extends Component {
                         />
                       </div>
                       <div className="home__name">
-                        {items[i].competitions[0].competitors[0].team.displayName}
+                        {items[i].competitions[0].competitors[0].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[0].records[0].summary})</span>
                       </div>
                       <div className="home__score">
                         {items[i].competitions[0].competitors[0].score}
