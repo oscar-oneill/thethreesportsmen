@@ -5,6 +5,7 @@
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
     overflow: -moz-scrollbars-none;
+    font-synthesis: none;
 }
 
 *::-webkit-scrollbar { 
@@ -21,11 +22,12 @@
     src: url("./fonts/Gotham\ Black\ Regular.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-image: url('./images/rickysingh_forestpark.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #000000;
     height: 100vh;
     width: 100vw;
     font-family: "Akkurat-Bold";

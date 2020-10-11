@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Intro/Intro.css';
 
-function Intro() {
+const Intro = () => {
     return (
         <div className="intro__container" id="home">
             <p className="heading">

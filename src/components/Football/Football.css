@@ -7,7 +7,7 @@
 .football__wrap {
     height: 130px;
     min-width: 365px;
-    background: #fffbfbd0;
+    background: #fffffff6;
     display: inline-block;
     margin: 15px;
     color: #000000;
@@ -72,11 +72,12 @@
 }
 
 .gametime {
-    height: 45px;
-    width: 55px;
-    display: flex;
+    height: auto;
+    width: auto;
+    display: inline-block;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
     margin-left: 5px;
     font-size: 12px;
 }

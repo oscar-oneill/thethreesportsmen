@@ -1,8 +1,10 @@
 import React from 'react';
 import '../Navigation/Navigation.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaypal } from "@fortawesome/free-brands-svg-icons";
 
-function Navigation() {
-    function openBlanket() {
+const Navigation = () => {
+    const openBlanket = () => {
         let blanket = document.querySelector(".blanket");
         let menu = document.querySelector(".menu");
         if (blanket.style.display === "none" || blanket.style.display === "") {
@@ -22,7 +24,7 @@ function Navigation() {
             </div>
 
             <button className="button__paypal">
-                <i class="fab fa-paypal"></i>
+                <FontAwesomeIcon className="paypal" icon={faPaypal} />
                 <a href="https://www.paypal.com/donate/?token=Leh1JgBLlEmIt71hM7MhRAwAkVsO5KoppDftpor29hG1w9TzRxe-wzxaEX1LZO0i0xk9SG&country.x=US&loca">Donate Now</a>
             </button>
         </div>

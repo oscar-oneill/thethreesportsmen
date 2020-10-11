@@ -7,7 +7,7 @@
 .baseball__wrap {
     height: 130px;
     min-width: 365px;
-    background: #fffbfbd0;
+    background: #fffffff6;
     display: inline-block;
     margin: 15px;
     color: #000000;
@@ -81,16 +81,6 @@
     margin-left: 5px;
     font-size: 12px;
 }
-
-/* .period {
-    height: 15px;
-    width: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-    font-size: 13px;
-} */
 
 #mlb {
     height: 20px;

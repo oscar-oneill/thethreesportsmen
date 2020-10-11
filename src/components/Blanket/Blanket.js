@@ -1,13 +1,18 @@
 import React from 'react';
 import './Blanket.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaypal } from "@fortawesome/free-brands-svg-icons";
 
-function Blanket() {
-    function foldBlanket() {
+const Blanket = () => {
+    const foldBlanket = () => {
     let blanket = document.querySelector(".blanket");
     let menu = document.querySelector(".menu");
+
     if (blanket.style.display === "flex" || blanket.style.display === "") {
         (blanket.style.display = "none") && (menu.style.display = "block");
-    } else blanket.style.display = "flex";
+    } else {
+        blanket.style.display = "flex"
+      }
     }
 
     return (
@@ -16,13 +21,17 @@ function Blanket() {
           &#10005;
         </div>
 
+          <button className="button__paypal_b">
+            <FontAwesomeIcon className="paypal_b" icon={faPaypal} />
+            <a href="https://www.paypal.com/donate/?token=Leh1JgBLlEmIt71hM7MhRAwAkVsO5KoppDftpor29hG1w9TzRxe-wzxaEX1LZO0i0xk9SG&country.x=US&loca">Donate Now</a>
+          </button>
+
         <ul className="blanket__items">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#episodes">Episodes</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#scores">Scores</a></li>
-          <li><a href="#headlines">Headlines</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li onClick={() => { foldBlanket(); window.scrollTo(0, 0) }}>Home</li>
+          <li onClick={() => { foldBlanket(); window.scrollTo(0, 609) }}>Episodes</li>
+          <li onClick={() => { foldBlanket(); window.scrollTo(0, 781) }}>About</li>
+          <li onClick={() => { foldBlanket(); window.scrollTo(0, 1056) }}>Scores</li>
+          <li onClick={() => { foldBlanket(); }}>Contact Us</li>
         </ul>
       </div>
     );

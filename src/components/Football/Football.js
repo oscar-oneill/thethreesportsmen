@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../Football/Football.css';
-import Logo from '../Football/nfl.png';
+import Logo from '../Media/Images/nfl.png';
 
 class Football extends Component {
 
@@ -14,20 +14,19 @@ class Football extends Component {
     }
 
     componentDidMount() {
-        fetch("https://oscar-sports-server.herokuapp.com/nfl")
-            .then(res => res.json())
-            .then(json => {
-                this.setState({
-                    isLoaded: true,
-                    items: json.events,
-                    week: json.week
-                })
-            });
+      fetch("https://oscar-sports-server.herokuapp.com/nfl")
+          .then(res => res.json())
+          .then(json => {
+              this.setState({
+                  isLoaded: true,
+                  items: json.events,
+                  week: json.week
+              })
+          });
     }
 
     render() {
         var { isLoaded, items } = this.state;
-        console.log(this.state.items)
 
         if (!isLoaded) {
             return <div className="football__wrap">Loading Data...</div>;
@@ -35,8 +34,8 @@ class Football extends Component {
         
         else {
             return (
-              <div class="nfl__container">
-                {items.map((item, i) => (
+              <div className="nfl__container">
+                  {items.map((item, i) => (
                   <div className="football__wrap" key={item.id}>
                     <div className="week">
                       <img id="nfl" src={Logo} alt="nfl logo" />
@@ -54,7 +53,7 @@ class Football extends Component {
                         {items[i].competitions[0].competitors[1].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[1].records[0].summary})</span>
                       </div>
                       <div className="road__score">
-                        {items[i].competitions[0].competitors[1].score}
+                        {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
                       </div>
 
                       <div className="gametime">
@@ -73,7 +72,7 @@ class Football extends Component {
                         {items[i].competitions[0].competitors[0].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[0].records[0].summary})</span>
                       </div>
                       <div className="home__score">
-                        {items[i].competitions[0].competitors[0].score}
+                        {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}
                       </div>
 
                       <div className="period">
@@ -87,7 +86,9 @@ class Football extends Component {
                         {items[i].competitions[0].venue.address.state}
                     </div>
                   </div>
-                ))}
+                )
+                
+                )}
               </div>
             );
         }

@@ -40,7 +40,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-    display: inline-flex;
 }
 
 .button__paypal:hover {
@@ -49,8 +48,13 @@
 }
 
 .button__paypal a {
-    color: white;
+    color: #ffffff;
 }
+
+.button__paypal .paypal {
+    color: #ffffff;
+    margin-right: 3px;
+} 
 
 .button__image {
     height: 15px;

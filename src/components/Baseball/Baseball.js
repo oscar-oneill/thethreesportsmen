@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../Baseball/Baseball.css";
-import Logo from '../Baseball/mlb.png';
+import Logo from '../Media/Images/mlb.png';
 
 class Football extends Component {
   constructor(props) {
@@ -24,7 +24,6 @@ class Football extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
-    console.log(this.state.items);
 
     if (!isLoaded) {
       return <div className="baseball__wrap">Loading Data...</div>;
@@ -33,11 +32,12 @@ class Football extends Component {
     else {
 
       return (
-        <div class="mlb__container">
+        <div className="mlb__container">
           {items.map((item, i) => (
             <div className="baseball__wrap" key={item.id}>
               <div className="status">
                 <img id="mlb" src={Logo} alt="mlb logo" />
+                {items[i].competitions[0].notes[0].headline}
               </div>
               <div className="mlb__road">
                 <div className="road__logo">
@@ -50,7 +50,7 @@ class Football extends Component {
                   {items[i].competitions[0].competitors[1].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[1].records[0].summary})</span>
                 </div>
                 <div className="road__score">
-                  {items[i].competitions[0].competitors[1].score}
+                  {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
                 </div>
 
                 <div className="gametime">
@@ -69,14 +69,12 @@ class Football extends Component {
                   {items[i].competitions[0].competitors[0].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[0].records[0].summary})</span>
                 </div>
                 <div className="home__score">
-                  {items[i].competitions[0].competitors[0].score}
+                  {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}
                 </div>
               </div>
 
               <div className="venue__data">
-                {items[i].competitions[0].venue.fullName} -{" "}
-                {items[i].competitions[0].venue.address.city},{" "}
-                {items[i].competitions[0].venue.address.state}
+                {items[i].competitions[0].series.summary}
               </div>
             </div>
           ))}

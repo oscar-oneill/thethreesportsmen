@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import '../Basketball/Basketball.css'
-import Logo from '../Basketball/nba.png'
+import React, { Component } from 'react';
+import '../Basketball/Basketball.css';
+import Logo from '../Media/Images/nba.png';
 
 class Basketball extends Component {
   constructor(props) {
@@ -26,13 +26,13 @@ class Basketball extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
-    console.log(this.state.items);
+    console.log(this.state.items)
 
     if (!isLoaded) {
       return <div className="basketball__wrap">Loading Data....</div>;
     } else {
       return (
-        <div class="nba__container">
+        <div className="nba__container">
           {items.map((item, i) => (
             <div className="basketball__wrap" key={item.id}>
               <div className="playoff__series">
@@ -50,7 +50,7 @@ class Basketball extends Component {
                   {items[i].competitions[0].competitors[1].team.displayName}
                 </div>
                 <div className="road__score">
-                  {items[i].competitions[0].competitors[1].score}
+                  {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
                 </div>
 
                 <div className="gametime">
@@ -69,7 +69,7 @@ class Basketball extends Component {
                   {items[i].competitions[0].competitors[0].team.displayName}
                 </div>
                 <div className="home__score">
-                  {items[i].competitions[0].competitors[0].score}
+                  {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}
                 </div>
 
                 <div className="period">

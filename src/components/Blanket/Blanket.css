@@ -46,3 +46,45 @@ li:hover {
     transition: .3s ease-out;
     cursor: pointer;
 }
+
+.button__paypal_b {
+    font-family: "Gotham Black";
+    position: absolute;
+    right: 15px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background: #0079C1;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    top: 505px;
+}
+
+.button__paypal_b:hover {
+    background: #00457C;
+    transition: .2s ease-in-out;
+}
+
+.button__paypal_b a {
+    color: #ffffff;
+}
+
+.button__paypal_b .paypal_b {
+    color: #ffffff;
+    margin-right: 3px;
+} 
+
+.button__image {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 655px) {
+    .button__paypal_b {
+        display: none;
+    }
+}

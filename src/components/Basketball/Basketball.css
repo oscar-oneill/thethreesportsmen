@@ -7,7 +7,7 @@
 .basketball__wrap {
     height: 130px;
     min-width: 365px;
-    background: #fffbfbd0;
+    background: #fffffff6;
     display: inline-block;
     margin: 15px;
     color: #000000;
@@ -77,6 +77,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
     margin-left: 5px;
     font-size: 13px;
 }

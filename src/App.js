@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Body from './components/Body/Body';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
         <Navigation />
@@ -13,3 +13,4 @@ function App() {
 }
 
 export default App;
+
