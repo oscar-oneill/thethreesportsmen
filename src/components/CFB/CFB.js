@@ -24,6 +24,7 @@ class CFB extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
+    console.log(this.state.items)
 
     if (!isLoaded) {
       return <div className="cfb__wrap">Loading Data...</div>;
@@ -85,7 +86,7 @@ class CFB extends Component {
                 </div>
 
                 <div className="cfbperiod">
-                  {items[i].competitions[0].broadcasts[0].names[0]}
+                  {items[i].competitions[0].broadcasts[0] ? items[i].competitions[0].broadcasts[0].names[0] : ""}
                 </div>
               </div>
 
