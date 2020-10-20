@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Scores/Scores.css';
-import Basketball from '../Basketball/Basketball';
+// import Basketball from '../Basketball/Basketball';
 import Football from '../Football/Football';
 import Baseball from '../Baseball/Baseball';
 import CFB from '../CFB/CFB';
@@ -12,7 +12,7 @@ const Scores = () => {
                       Scores
                   </div>
                   <div className="scores__body">
-                    <Basketball/>
+                    {/* <Basketball/>  */}
                     <Football/>
                     <Baseball/>
                     <CFB />

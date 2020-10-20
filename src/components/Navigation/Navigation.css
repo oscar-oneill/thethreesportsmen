@@ -65,20 +65,28 @@
 
 /* Burger Menu */
 .menu {
+    display: inline-block;
     color: #ffffff;
     font-size: 30px;
     position: absolute;
     right: 15px;
     line-height: 0;
     cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s ease-in-out;
 }
 
 .menu:hover {
     color: #6a5acd;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-
+.menu.active {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
 
 @media screen and (max-width: 654px) {
     .button__paypal {

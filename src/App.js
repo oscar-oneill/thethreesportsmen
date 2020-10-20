@@ -5,10 +5,10 @@ import Body from './components/Body/Body';
 
 const App = () => {
   return (
-    <div className="App">
+      <div className="App">
         <Navigation />
-        <Body />  
-    </div>
+        <Body />
+      </div>
   );
 }
 

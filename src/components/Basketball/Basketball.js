@@ -72,7 +72,7 @@ class Basketball extends Component {
                 </div>
 
                 <div className="period">
-                  {items[i].competitions[0].broadcasts[0].names[0]}
+                  {items[i].competitions[0].broadcasts[0] ? items[i].competitions[0].broadcasts[0].names[0] : ""}
                 </div>
               </div>
 

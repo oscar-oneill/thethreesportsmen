@@ -24,7 +24,6 @@ class CFB extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
-    console.log(this.state.items)
 
     if (!isLoaded) {
       return <div className="cfb__wrap">Loading Data...</div>;
@@ -46,15 +45,10 @@ class CFB extends Component {
                   />
                 </div>
                 <div className="cfbroad__name">
-                  <span className="cfbroad__rank">
-                    {items[i].competitions[0].competitors[1].curatedRank.current <= 25 ? items[i].competitions[0].competitors[1].curatedRank.current : ""} 
-                  </span>
-                  {items[i].competitions[0].competitors[1].team.displayName}{" "}
-                  <span className="cfbteam__record">
-                    (
-                    {items[i].competitions[0].competitors[1].records[0].summary}
-                    )
-                  </span>
+                  {items[i].competitions[0].competitors[1].curatedRank.current <= 25 ? items[i].competitions[0].competitors[1].curatedRank.current : ""} {" "}
+                  {items[i].competitions[0].competitors[1].team.displayName}
+                  <br/>
+                  ({items[i].competitions[0].competitors[1].records[0].summary})
                 </div>
                 <div className="cfbroad__score">
                   {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
@@ -73,13 +67,10 @@ class CFB extends Component {
                   />
                 </div>
                 <div className="cfbhome__name">
-                <span className="cfbhome__rank">{items[i].competitions[0].competitors[0].curatedRank.current <= 25 ? items[i].competitions[0].competitors[0].curatedRank.current : ""}</span>
-                  {items[i].competitions[0].competitors[0].team.displayName}{" "}
-                  <span className="cfbteam__record">
-                    (
-                    {items[i].competitions[0].competitors[0].records[0].summary}
-                    )
-                  </span>
+                  {items[i].competitions[0].competitors[0].curatedRank.current <= 25 ? items[i].competitions[0].competitors[0].curatedRank.current : ""} {" "}
+                  {items[i].competitions[0].competitors[0].team.displayName}
+                  <br/>
+                  ({items[i].competitions[0].competitors[0].records[0].summary})
                 </div>
                 <div className="cfbhome__score">
                   {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}

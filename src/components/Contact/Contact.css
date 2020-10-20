@@ -1,0 +1,90 @@
+.contact__container {
+    color: white;
+    min-height: auto;
+    width: 100vw;
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__header {
+    height: auto;
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: static;
+}
+
+.contact__box {
+    display: grid;
+    justify-content: center;
+}
+
+.box {
+    width: 400px;
+    margin-bottom: 3px;
+    color: #000000;
+    border: none;
+    outline: none;
+    font-family: 'Rubik';
+    padding-left: 10px;
+    background: #f5f5f5f6;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+.message {
+    height: 315px;
+    padding: 15px;
+}
+
+.contact__name, .subject, .email, .submit {
+    height: 75px;
+}
+
+.submit {
+    font-family: 'Rubik';
+    font-size: 15px;
+    cursor: pointer;
+    background: #6a5acd;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: #fa8072;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    opacity: 1; /* Firefox */
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000;
+}
+
+@media (min-width: 809px) {
+    .contact__box {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, 80px);
+        column-gap: 5px;
+    }
+
+    .subject, .email, .submit {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

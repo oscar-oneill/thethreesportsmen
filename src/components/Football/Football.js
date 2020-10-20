@@ -50,7 +50,9 @@ class Football extends Component {
                         />
                       </div>
                       <div className="road__name">
-                        {items[i].competitions[0].competitors[1].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[1].records[0].summary})</span>
+                        {items[i].competitions[0].competitors[1].team.displayName} 
+                        <br/>
+                        ({items[i].competitions[0].competitors[1].records[0].summary})
                       </div>
                       <div className="road__score">
                         {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
@@ -69,14 +71,16 @@ class Football extends Component {
                         />
                       </div>
                       <div className="home__name">
-                        {items[i].competitions[0].competitors[0].team.displayName} <span className="team__record">({items[i].competitions[0].competitors[0].records[0].summary})</span>
+                        {items[i].competitions[0].competitors[0].team.displayName}
+                        <br/>
+                        ({items[i].competitions[0].competitors[0].records[0].summary})
                       </div>
                       <div className="home__score">
                         {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}
                       </div>
 
                       <div className="period">
-                        {items[i].competitions[0].broadcasts[0].names[0]}
+                        {items[i].competitions[0].broadcasts[0] ? items[i].competitions[0].broadcasts[0].names[0] : ""}
                       </div>
                     </div>
 
