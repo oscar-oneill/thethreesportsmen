@@ -24,7 +24,6 @@ class Football extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
-    console.log(this.state.items)
 
     if (!isLoaded) {
       return <div className="baseball__wrap">Loading Data...</div>;

@@ -1,10 +1,10 @@
-.nfl__container {
+.cbb__container {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
 
-.football__wrap {
+.cbb__wrap {
     height: 130px;
     min-width: 365px;
     background: #fffffff6;
@@ -15,14 +15,14 @@
     font-size: 14.25px;
 }
 
-.football__wrap img {
+.cbb__wrap img {
     height: 45px;
     width: 45px;
     object-fit: contain;
     margin-right: 5px;
 }
 
-.week {
+.cbbweek {
     height: 20px;
     width: 100%;
     background: #000000;
@@ -33,19 +33,19 @@
     color: #ffffff;
 }
 
-.nfl__road, .nfl__home {
+.cbb__road, .cbb__home {
     width: 100%;
     height: 55px;
     display: flex;
     padding: 5px;
 }
 
-.road__logo, .home__logo {
+.cbbroad__logo, .cbbhome__logo {
     display: flex;
     align-items: center;
 }
 
-.road__name, .home__name {
+.cbbroad__name, .cbbhome__name {
     display: flex;
     align-items: center;
     height: 45px;
@@ -54,7 +54,7 @@
     padding: 3px;
 }
 
-.road__score, .home__score {
+.cbbroad__score, .cbbhome__score {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
     margin-left: 5px;
 }
 
-.venue__data {
+.cbbvenue__data {
     height: 22px;
     background: #ffffff;
     color: #000000;
@@ -73,18 +73,18 @@
     font-size: 12px;
 }
 
-.gametime {
+.cbbgametime {
     height: 45px;
     width: 55px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
     margin-left: 5px;
     font-size: 12px;
 }
 
-.period {
+.cbbperiod {
     height: 15px;
     width: 55px;
     display: flex;
@@ -94,13 +94,8 @@
     font-size: 13px;
 }
 
-#nfl {
+#ncaa {
     height: 18px;
     width: 18px;
     object-fit: contain;
-}
-
-.team__record {
-    font-size: 13px;
-    margin-left: 3px;
 }
