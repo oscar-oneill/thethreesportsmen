@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
-import '../Navigation/Navigation.css';
-import '../Navigation/Blanket.css';
+import '../components/Navigation.css';
+import '../components/Blanket.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaypal } from "@fortawesome/free-brands-svg-icons";
 

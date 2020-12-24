@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Navigation from './components/Navigation/Navigation';
-import Body from './components/Body/Body';
+import Navigation from './components/Navigation';
+import Body from './components/Body';
 
 const App = () => {
   return (

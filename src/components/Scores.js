@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Scores/Scores.css';
-// import Basketball from '../Basketball/Basketball'; Season End
-import Football from '../Football/Football';
-// import Baseball from '../Baseball/Baseball'; Season End
-import CFB from '../CFB/CFB';
-import CBB from '../CBB/CBB';
+import '../components/Scores.css';
+import Basketball from '../components/Basketball';
+import Football from '../components/Football';
+// import Baseball from '../components/Baseball'; Season End
+import CFB from '../components/CFB';
+import CBB from '../components/CBB';
 
 const Scores = () => {
           return (
@@ -13,7 +13,7 @@ const Scores = () => {
                       Scores
                 </div>
                 <div className="scores__body">
-                    {/* <Basketball/>  */}
+                    <Basketball/> 
                     <Football/>
                     {/* <Baseball/> */}
                     <CFB />

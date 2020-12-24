@@ -1,13 +1,13 @@
 import React from 'react';
-import '../About/About.css';
-import Earl from '../Media/Images/earl.jpg';
-import Josh from '../Media/Images/josh.jpg';
-import Yankees from '../Media/Images/NYY.png';
-import Nets from '../Media/Images/BKN.png';
-import Giants from '../Media/Images/NYG.png';
-import Rockets from '../Media/Images/HOU.png';
-import Cowboys from '../Media/Images/DAL.png';
-import St_Johns from '../Media/Images/STJ.png';
+import '../components/About.css';
+import Earl from '../media/images/earl.jpg';
+import Josh from '../media/images/josh.jpg';
+import Yankees from '../media/images/NYY.png';
+import Nets from '../media/images/BKN.png';
+import Giants from '../media/images/NYG.png';
+import Rockets from '../media/images/HOU.png';
+import Cowboys from '../media/images/DAL.png';
+import St_Johns from '../media/images/STJ.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../Baseball/Baseball.css";
-import Logo from '../Media/Images/mlb.png';
+import "../components/Baseball.css";
+import Logo from '../media/images/mlb.png';
 
 class Football extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './MediaPlayer.css';
-import Podcast from "../Media/Audio/TSM-001.mp3";
+import Podcast from "../media/audio/TSM-001.mp3";
 import { PlayButton, Timer, Progress } from "react-soundplayer/components";
 import { withSoundCloudAudio } from "react-soundplayer/addons";
 

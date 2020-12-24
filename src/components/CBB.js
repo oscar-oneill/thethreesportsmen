@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../CBB/CBB.css";
-import Logo from "../Media/Images/ncaa.png";
+import "../components/CBB.css";
+import Logo from "../media/images/ncaa.png";
 
 class CBB extends Component {
   constructor(props) {
