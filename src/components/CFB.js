@@ -48,7 +48,7 @@ class CFB extends Component {
                   {items[i].competitions[0].competitors[1].curatedRank.current <= 25 ? items[i].competitions[0].competitors[1].curatedRank.current : ""} {" "}
                   {items[i].competitions[0].competitors[1].team.displayName}
                   <br/>
-                  ({items[i].competitions[0].competitors[1].records[0].summary})
+                  {/* ({items[i].competitions[0].competitors[1].records[0].summary}) */}
                 </div>
                 <div className="cfbroad__score">
                   {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[1].score}
@@ -70,7 +70,7 @@ class CFB extends Component {
                   {items[i].competitions[0].competitors[0].curatedRank.current <= 25 ? items[i].competitions[0].competitors[0].curatedRank.current : ""} {" "}
                   {items[i].competitions[0].competitors[0].team.displayName}
                   <br/>
-                  ({items[i].competitions[0].competitors[0].records[0].summary})
+                  {/* ({items[i].competitions[0].competitors[0].records[0].summary}) */}
                 </div>
                 <div className="cfbhome__score">
                   {items[i].status.type.state === "pre" ? "" : items[i].competitions[0].competitors[0].score}
