@@ -80,7 +80,7 @@ class Basketball extends Component {
                 </div>
               </div>
 
-              <div className="venue__data">
+              <div className="nba_venue__data">
                 {items[i].competitions[0].venue.fullName} -{" "}
                   {items[i].competitions[0].venue.address.city},{" "}
                   {items[i].competitions[0].venue.address.state}

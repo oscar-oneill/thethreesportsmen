@@ -1,9 +1,9 @@
 import React from 'react';
 import '../components/Scores.css';
 import Basketball from '../components/Basketball';
-import Football from '../components/Football';
-// import Baseball from '../components/Baseball'; Season End
-import CFB from '../components/CFB';
+// import Football from '../components/Football'; Pro Bowl Cancelled
+// import Baseball from '../components/Baseball'; Season Resumes March 2021
+// import CFB from '../components/CFB'; Season Resumes August 2021
 import CBB from '../components/CBB';
 
 const Scores = () => {
@@ -14,9 +14,9 @@ const Scores = () => {
                 </div>
                 <div className="scores__body">
                     <Basketball/> 
-                    <Football/>
+                    {/* <Football/> */}
                     {/* <Baseball/> */}
-                    <CFB />
+                    {/* <CFB /> */}
                     <CBB />
                 </div>
             </div>
