@@ -6,7 +6,7 @@
 
 .basketball__wrap {
     height: 130px;
-    min-width: 365px;
+    min-width: 380px;
     background: #fffffff6;
     display: inline-block;
     margin: 15px;
@@ -50,6 +50,7 @@
     align-items: center;
     height: auto;
     width: 195px;
+    font-size: 13px;
 }
 
 .road__score, .home__score {
